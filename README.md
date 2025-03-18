@@ -11,7 +11,10 @@ A **minimal, dark-themed, draggable virtual keyboard** for Chrome that activates
 - ✅ **10-Keyless Layout** - Compact and familiar layout.
   
 ## 🚀 How It Works ? It does not          
-         
+
+## 🎥 Demo  
+![Lazy Keyboard in Action](keyboardvid.gif)
+
 1. Open any webpage with a text input field.
 2. **Double right-click** inside the field to activate the keyboard.
 3. Click on the virtual keys to type.
