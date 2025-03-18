@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazy Keyboard Settings</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        .setting {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        button {
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lazy Keyboard Settings</h1>
+    <div class="setting">
+        <label>
+            <input type="checkbox" id="enableRGB"> Enable RGB Wave Effect
+        </label>
+    </div>
+    <div class="setting">
+        <label>
+            <input type="checkbox" id="enableSound"> Enable Mechanical Keyboard Sound
+        </label>
+    </div>
+    <button id="save">Save Settings</button>
+
+    <script src="settings.js"></script>
+</body>
+</html>

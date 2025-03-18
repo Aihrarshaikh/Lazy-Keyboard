@@ -1,0 +1,212 @@
+#universal-virtual-keyboard-ext {
+  position: fixed;
+  background-color: rgba(40, 44, 52, 0.9);
+  padding: 10px;
+  display: none;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  z-index: 2147483647;
+  width: 30%;
+  min-width: 300px;
+  max-width: 600px;
+}
+
+#universal-virtual-keyboard-ext .keyboard-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+#universal-virtual-keyboard-ext .key {
+  flex-grow: 1;
+  height: 40px;
+  margin: 0 2px;
+  border: 1px solid #555;
+  background-color: rgba(60, 64, 72, 0.9);
+  color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+}
+
+#universal-virtual-keyboard-ext .key:hover {
+  background-color: rgba(80, 84, 92, 0.9);
+}
+
+#universal-virtual-keyboard-ext .key:active {
+  background-color: rgba(100, 104, 112, 0.9);
+}
+
+#universal-virtual-keyboard-ext .wide {
+  flex-grow: 1.5;
+}
+
+#universal-virtual-keyboard-ext .widest {
+  flex-grow: 3;
+}
+
+#dismiss-keyboard {
+  width: 100%;
+  padding: 5px;
+  margin-top: 5px;
+  background-color: rgba(255, 0, 0, 0.7);
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  #universal-virtual-keyboard-ext {
+    width: 90%;
+    min-width: 250px;
+  }
+
+  #universal-virtual-keyboard-ext .key {
+    height: 30px;
+    font-size: 12px;
+  }
+}
+
+#virtual-keyboard-context-menu {
+  background-color: rgba(40, 44, 52, 0.9);
+  border: 1px solid #555;
+  padding: 5px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+
+#virtual-keyboard-context-menu button {
+  display: block;
+  width: 100%;
+  padding: 5px;
+  background: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  color: #fff;
+}
+
+#virtual-keyboard-context-menu button:hover {
+  background-color: rgba(80, 84, 92, 0.9);
+}
+
+#universal-virtual-keyboard-ext {
+  display: flex;
+  flex-direction: column;
+}
+
+#keyboard-header {
+  cursor: move;
+  background-color: rgba(200, 200, 200, 0.3);
+  height: 15px;
+  margin-bottom: 5px;
+}
+
+.keyboard-content {
+  flex-grow: 1;
+}
+
+#dismiss-keyboard {
+  width: 100%;
+  padding: 5px;
+  margin-top: 5px;
+  background-color: rgba(255, 0, 0, 0.7);
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+
+
+#universal-virtual-keyboard-ext {
+  position: fixed;
+  background-color: rgba(40, 44, 52, 0.9);
+  padding: 10px;
+  display: none;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  z-index: 2147483647;
+  width: 30%;
+  min-width: 300px;
+  max-width: 600px;
+  overflow: hidden;
+}
+
+.keyboard-content {
+  position: relative;
+  z-index: 1;
+}
+
+.rgb-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+}
+
+#universal-virtual-keyboard-ext .keyboard-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  position: relative;
+  z-index: 2;
+}
+
+#universal-virtual-keyboard-ext .key {
+  flex-grow: 1;
+  height: 40px;
+  margin: 0 2px;
+  border: 1px solid #555;
+  background-color: rgba(60, 64, 72, 0.9);
+  color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  position: relative;
+  z-index: 2;
+}
+
+#universal-virtual-keyboard-ext .key:hover {
+  background-color: rgba(80, 84, 92, 0.9);
+}
+
+#universal-virtual-keyboard-ext .key:active {
+  background-color: rgba(100, 104, 112, 0.9);
+}
+
+#universal-virtual-keyboard-ext .wide {
+  flex-grow: 1.5;
+}
+
+#universal-virtual-keyboard-ext .widest {
+  flex-grow: 3;
+}
+
+@keyframes wave {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.key-rgb {
+    background: linear-gradient(270deg, #ff0000, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff, #ff0000);
+    background-size: 1400% 1400%;
+    animation: wave 10s ease infinite;
+}

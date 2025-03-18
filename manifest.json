@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "Lazy Keyboard",
+  "version": "2",
+  "description": "A responsive virtual keyboard that works on most sites",
+  "permissions": ["activeTab", "storage", "contextMenus"],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "css": ["styles.css"],
+      "js": ["content.js"],
+      "all_frames": true,
+      "run_at": "document_end"
+    }
+  ],
+  "options_page": "settings.html",
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Activate Virtual Keyboard"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["key_press.mp3"],
+      "matches": ["<all_urls>", "chrome-extension://*/*"]
+    }
+  ]
+}
